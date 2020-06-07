@@ -30,8 +30,8 @@ public class MovieController {
                 .take(10);
     }
 
-    @GetMapping("/actorNames")
-    public Flux<Map<String, Object>> findActorNamesOfMovie(@RequestParam("movieTitle") final String movieTitle) {
+    @GetMapping("/actors")
+    public Flux<Map<String, Object>> findActorsOfMovie(@RequestParam("movieTitle") final String movieTitle) {
         return reactiveNeo4jClient.query(
                 "MATCH (node:Movie{ title : $title })<-[:ACTED_IN]-(actor) "
                 + "RETURN actor.name AS name, actor.born AS born "
