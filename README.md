@@ -2,6 +2,8 @@
 
 > ตัวอย่าง Spring-boot Reactive Neo4j Graph Database
 
+![](./spring-data-neo4j.png)
+
 # Prerequisites 
 
 - [ติดตั้ง Neo4j Graph Database ด้วย Docker บน Ubuntu 18.04](https://www.jittagornp.me/blog/install-docker-neo4j-graph-database-on-ubuntu-18.04/)
